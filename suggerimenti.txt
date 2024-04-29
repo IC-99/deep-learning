@@ -1,0 +1,13 @@
+installare l'ambiente per usare la GPU
+
+rimuovere la rimozione della season
+probabilmente rimuovere anche la normalizzazione
+ricavare gli embedding da ogni variabile
+ricavati gli embedding provare una 1D + wavenet
+
+cercare di ricavare un valore sleep_quality
+cercare di ricavare (forse sta nei dati) il gait (passo) e controllare se è correlato con la sleep_quality (articoli scientifici a riguardo)
+
+implementare time2vec
+implementare echo
+implementare transformer
