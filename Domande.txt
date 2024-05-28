@@ -1,3 +1,6 @@
 come gestire dati (altezza, età) anomali
 come passare dati costanti (altezza, età) come input alla wavenet
 richiedere il dataset completo
+proposta di confrontare le previsioni fatte utilizzando la sleepquality dell'articolo vs. input multivariato con tutti i dati sul sonno
+probabilmente è necessario inserire anche l'altezza e l'età dell'utente nell'input per stimare meglio il gait
+si potrebbero dare in input [altezza, età, sleepquality degli ultimi 7 giorni] e ottenere in output il gait
