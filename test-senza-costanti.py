@@ -29,6 +29,7 @@ def build_model(input_shape):
     model = Model(inputs=temporal_input, outputs=output)
     
     return model
+
 def createXY(dataset_parameter, window_size):
     dataX = []
     dataY = []
@@ -45,7 +46,6 @@ elenco_utenti = pd.read_csv('./userinfo.csv', usecols=['user_id', 'timezone', 's
 print(elenco_utenti.head())
 
 dataset = pd.read_csv('./dataset.csv')
-
 dataset.set_index(['user_id','date'], inplace=True)
 
 print(dataset.head())
@@ -84,7 +84,6 @@ test_lista = utenti[n_utenti_train:]
 testX_lista = []
 testY_lista = []
 
-
 counter = 0
 for t in test_lista:
     testX_temp, testY_temp = createXY(t.to_numpy(), 7)
@@ -113,7 +112,6 @@ model.compile(optimizer='adam', loss="mse", metrics=['mae'])
 # Addestramento del modello
 history = model.fit(x=trainX, y=trainY, epochs=20, batch_size=4096, validation_split=0.2)
 
-
 # Stampa delle statistiche di addestramento
 #print("Loss di addestramento:", history.history['loss'])
 #print("Val_loss:", history.history['val_loss'])
@@ -122,7 +120,7 @@ score_test = model.evaluate(x=testX, y=testY, verbose = 0)
 
 print(score_test)
 
-prediction = model.predict(testX)
+prediction = model.predict(testX[:100])
 
 np.set_printoptions(suppress=True)
 print('prediction:', prediction)

@@ -1,0 +1,3 @@
+come gestire dati (altezza, età) anomali
+come passare dati costanti (altezza, età) come input alla wavenet
+richiedere il dataset completo
