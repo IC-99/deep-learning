@@ -1,7 +1,0 @@
-implementata la previsione di una variabile all'ottavo giorno dati in input 7 giorni di dati multivariati WaveNet
-
-analizzato la distribuzione dei dati e trovati alcuni dati insoliti
-
-trovato articolo che descrive una metrica per valutare la qualità del sonno e implementata funzione che calcola questa metrica su un dataset artificiale
-
-
