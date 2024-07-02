@@ -1,4 +1,4 @@
-# Modello per la stima della qualità del sonno in dispositivi wareable
+# Modello per la stima della qualità del sonno in dispositivi wearable
 Repository relativa al progetto del corso di Deep Learning.
 
 # Obiettivo del progetto
